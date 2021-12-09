@@ -22,7 +22,6 @@ public class DragElement : MonoBehaviour, IPointerDownHandler, IDragHandler, IBe
     {
         _canvasGroup.interactable = false;
         _canvasGroup.alpha = .6f;
-        print("StartDrag");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -38,7 +37,6 @@ public class DragElement : MonoBehaviour, IPointerDownHandler, IDragHandler, IBe
         }
         _canvasGroup.interactable = true;
         _canvasGroup.alpha = 1f;
-        print("EndDrag");
     }
 
 

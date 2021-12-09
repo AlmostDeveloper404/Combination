@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: None
+  m_Text: 
 --- !u!1 &6575247769177989933
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +211,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameText: {fileID: 6575247768203557411}
   _scoreText: {fileID: 6575247768119672700}
-  _pos: 0
+  PlayerData:
+    Score: 0
+    Name: 
 --- !u!1 &6575247769792243879
 GameObject:
   m_ObjectHideFlags: 0

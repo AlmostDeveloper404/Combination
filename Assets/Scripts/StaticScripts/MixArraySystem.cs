@@ -20,6 +20,6 @@ public static class MixArraySystem
         for (int i = 0; i < length; i++) tmpArr[i] = arr[i];
         for (int i = 0; i < length; i++) arr[i] = tmpArr[array[i]];
 
-        for (int i = 0; i < array.Length; i++) Debug.Log(arr[i]);
+        //for (int i = 0; i < array.Length; i++) Debug.Log(arr[i]);
     }
 }

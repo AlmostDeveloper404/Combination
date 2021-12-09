@@ -6,18 +6,12 @@ public class RawHighScore : MonoBehaviour
     [SerializeField] Text _nameText;
     [SerializeField] Text _scoreText;
 
-    private int _score = 0;
+    public PlayerData PlayerData;
 
-    [SerializeField] int _pos;
 
-    
-
-    public void SetUp(int score,string name)
+    private void Start()
     {
-        _nameText.text = PlayerPrefs.GetString(_pos.ToString(),name);
-        _score = PlayerPrefs.GetInt(_pos.ToString(),score);
-
-        _scoreText.text = _score.ToString();
+        _nameText.text = PlayerData.Name;
+        _scoreText.text = PlayerData.Score.ToString();
     }
-
 }

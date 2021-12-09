@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -17,8 +15,6 @@ public class ScoreCounter : Singleton<ScoreCounter>
     {
         _currentScore = _startScore;
         _scoreText = GetComponent<Text>();
-
-        UpdateScore(_currentScore);
     }
 
     public void UpdateScore(int scoreAmount)
